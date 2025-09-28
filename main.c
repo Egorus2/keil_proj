@@ -7,6 +7,7 @@
 
 int main(void)
 {
+	
 	RCC_Init();
 	
 	// write 1 to pin
