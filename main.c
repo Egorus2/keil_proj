@@ -3,18 +3,23 @@
 
 //privat func include
 #include "init_file.h"
+#include "INT_Handler.h"
 
+//privat variables
+static uint16_t startTime;
 
 int main(void)
 {
-	
 	RCC_Init();
+	GPIO_init();
+	sysTickInit();
 	
-	// write 1 to pin
-	GPIOA->ODR |= GPIO_ODR_OD5;
+	
 	while(1)
 	{
-		
+		startTime = (uint16_t)msCounter;
+		while(msCounter - startTime < 1000);
+		GPIOA->ODR ^= GPIO_ODR_OD5;
 	}
 }
 
