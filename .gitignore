@@ -1,0 +1,12 @@
+*.obj
+*.o
+*.axf
+*.hex
+*.bin
+*.dep
+*.lnp
+*.plg
+*.htm
+Debug/
+Objects/
+Listings/
