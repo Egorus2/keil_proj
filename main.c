@@ -3,10 +3,10 @@
 
 //privat func include
 #include "init_file.h"
-#include "INT_Handler.h"
+#include "sysTick_init.h"
 
 //privat variables
-static uint16_t startTime;
+static uint64_t startTime;
 
 int main(void)
 {
@@ -17,8 +17,8 @@ int main(void)
 	
 	while(1)
 	{
-		startTime = (uint16_t)msCounter;
-		while(msCounter - startTime < 1000);
+		startTime = msCounter;
+		while(msCounter - startTime < 800);
 		GPIOA->ODR ^= GPIO_ODR_OD5;
 	}
 }

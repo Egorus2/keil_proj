@@ -1,4 +1,4 @@
-./objects/int_hendler.o: scr\INT_Hendler.c inc\INT_Hendler.h \
+./objects/systick_init.o: scr\sysTick_init.c inc\sysTick_init.h \
   C:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   C:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h \
   C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h \
